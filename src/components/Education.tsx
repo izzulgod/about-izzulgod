@@ -17,7 +17,7 @@ const Education = () => {
       period: "2025 - Sekarang",
       location: "Yogyakarta, Indonesia", 
       description: "Mempelajari pengembangan sistem informasi, database, dan teknologi informasi",
-      logo: "/edu/amikom-logo.png"
+      logo: "/edu/amikom-logo.jpg"
     }
   ];
 
