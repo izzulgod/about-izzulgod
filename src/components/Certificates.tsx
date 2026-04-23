@@ -102,61 +102,61 @@ const Certificates = () => {
   };
 
   return (
-    <section id="certificates" className="py-20 px-4 bg-white dark:bg-gray-900 transition-colors duration-300">
+    <section id="certificates" className="py-12 md:py-20 px-4 bg-white dark:bg-gray-900 transition-colors duration-300">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+        <div className="text-center mb-10 md:mb-16">
+          <h2 className="text-3xl md:text-5xl font-bold mb-3 md:mb-4">
             <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
               Sertifikat & Pencapaian
             </span>
           </h2>
-          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto transition-colors duration-300">
+          <p className="text-base md:text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto transition-colors duration-300">
             Komitmen saya untuk terus belajar dan mengembangkan kemampuan
           </p>
         </div>
 
-        <div className={`grid md:grid-cols-2 lg:grid-cols-3 gap-8 transition-all duration-500 ${showAll ? 'opacity-100' : 'opacity-100'}`}>
+        <div className={`grid sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-8 transition-all duration-500 ${showAll ? 'opacity-100' : 'opacity-100'}`}>
           {displayedCertificates.map((certificate, index) => (
             <div key={index} className={`bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 overflow-hidden group ${showAll && index >= 3 ? 'animate-fade-in' : ''}`}>
               <div className="relative overflow-hidden">
                 <img 
                   src={certificate.image} 
                   alt={certificate.title}
-                  className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
+                  className="w-full h-40 md:h-48 object-cover group-hover:scale-110 transition-transform duration-300"
                 />
-                <div className="absolute top-4 right-4 bg-white/90 dark:bg-gray-800/90 p-2 rounded-full transition-colors duration-300">
-                  <Award className="w-6 h-6 text-yellow-600" />
+                <div className="absolute top-3 right-3 md:top-4 md:right-4 bg-white/90 dark:bg-gray-800/90 p-1.5 md:p-2 rounded-full transition-colors duration-300">
+                  <Award className="w-5 h-5 md:w-6 md:h-6 text-yellow-600" />
                 </div>
               </div>
               
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-800 dark:text-white mb-2 transition-colors duration-300">{certificate.title}</h3>
-                <p className="text-blue-600 dark:text-blue-400 font-semibold mb-2 transition-colors duration-300">{certificate.issuer}</p>
-                <p className="text-gray-600 dark:text-gray-300 mb-3 text-sm leading-relaxed transition-colors duration-300">{certificate.description}</p>
+              <div className="p-4 md:p-6">
+                <h3 className="text-lg md:text-xl font-bold text-gray-800 dark:text-white mb-2 transition-colors duration-300">{certificate.title}</h3>
+                <p className="text-sm md:text-base text-blue-600 dark:text-blue-400 font-semibold mb-2 transition-colors duration-300">{certificate.issuer}</p>
+                <p className="text-gray-600 dark:text-gray-300 mb-3 text-xs md:text-sm leading-relaxed transition-colors duration-300">{certificate.description}</p>
                 
-                <div className="flex items-center space-x-2 mb-4 text-gray-500 dark:text-gray-400 text-sm transition-colors duration-300">
-                  <Calendar size={16} />
+                <div className="flex items-center space-x-2 mb-3 md:mb-4 text-gray-500 dark:text-gray-400 text-xs md:text-sm transition-colors duration-300">
+                  <Calendar size={14} />
                   <span>{certificate.date}</span>
                 </div>
 
-                <div className="flex flex-wrap gap-2 mb-4">
+                <div className="flex flex-wrap gap-1.5 md:gap-2 mb-3 md:mb-4">
                   {certificate.skills.map((skill, skillIndex) => (
-                    <span key={skillIndex} className="px-2 py-1 bg-gradient-to-r from-green-100 to-blue-100 dark:from-green-900/50 dark:to-blue-900/50 text-green-600 dark:text-green-400 text-xs rounded-full font-medium transition-colors duration-300">
+                    <span key={skillIndex} className="px-2 py-0.5 md:py-1 bg-gradient-to-r from-green-100 to-blue-100 dark:from-green-900/50 dark:to-blue-900/50 text-green-600 dark:text-green-400 text-[10px] md:text-xs rounded-full font-medium transition-colors duration-300">
                       {skill}
                     </span>
                   ))}
                 </div>
                 
                 <div className="flex justify-between items-center">
-                  <span className="text-xs text-gray-400 dark:text-gray-500 transition-colors duration-300">ID: {certificate.credentialId}</span>
+                  <span className="text-[10px] md:text-xs text-gray-400 dark:text-gray-500 transition-colors duration-300">ID: {certificate.credentialId}</span>
                   <a 
                     href={certificate.verifyLink || "#"} 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="flex items-center space-x-1 text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors"
                   >
-                    <ExternalLink size={16} />
-                    <span className="text-sm">Verify</span>
+                    <ExternalLink size={14} />
+                    <span className="text-xs md:text-sm">Verify</span>
                   </a>
                 </div>
               </div>

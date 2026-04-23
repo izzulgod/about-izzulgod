@@ -102,47 +102,47 @@ const Hero = () => {
       <div className="w-full max-w-6xl mx-auto text-center relative z-10">
         <div className="animate-fade-in">
           {/* Greeting with icon */}
-          <div className="flex items-center justify-center mb-4 md:mb-6">
-            <Sparkles className="w-5 md:w-6 h-5 md:h-6 text-blue-600 dark:text-blue-400 mr-2 md:mr-3 transition-colors duration-300" />
-            <span className="text-gray-600 dark:text-gray-300 font-medium text-5xl md:text-4xl transition-colors duration-300">Hello World!</span>
-            <Sparkles className="w-5 md:w-6 h-5 md:h-6 text-purple-600 dark:text-purple-400 ml-2 md:ml-3 transition-colors duration-300" />
+          <div className="flex items-center justify-center mb-3 md:mb-6">
+            <Sparkles className="w-4 md:w-6 h-4 md:h-6 text-blue-600 dark:text-blue-400 mr-2 md:mr-3 transition-colors duration-300" />
+            <span className="text-gray-600 dark:text-gray-300 font-medium text-2xl md:text-4xl transition-colors duration-300">Hello World!</span>
+            <Sparkles className="w-4 md:w-6 h-4 md:h-6 text-purple-600 dark:text-purple-400 ml-2 md:ml-3 transition-colors duration-300" />
           </div>
           
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-8 leading-tight">
+          <h1 className="text-3xl md:text-6xl lg:text-7xl font-bold mb-6 md:mb-8 leading-tight">
             <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-blue-800 bg-clip-text text-transparent">
               Saya IzzulGod
             </span>
           </h1>
           
-          <div className="max-w-4xl mx-auto mb-8">
-            <p className="text-xl md:text-2xl lg:text-3xl text-gray-600 dark:text-gray-300 mb-3 leading-relaxed transition-colors duration-300">
+          <div className="max-w-4xl mx-auto mb-6 md:mb-8">
+            <p className="text-base md:text-2xl lg:text-3xl text-gray-600 dark:text-gray-300 mb-3 leading-relaxed transition-colors duration-300">
               Selamat datang di website buatanku {'>'}{'<'}
             </p>
           </div>
 
           {/* Social Links */}
-          <div className="flex justify-center space-x-6 mb-14">
-            <a href="https://github.com/IzzulGod" target="_blank" rel="noopener noreferrer" className="w-12 h-12 bg-white dark:bg-gray-800 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 group border border-gray-100 dark:border-gray-700 flex items-center justify-center">
-              <Github className="w-6 h-6 text-gray-700 dark:text-gray-300 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors" />
+          <div className="flex justify-center space-x-4 md:space-x-6 mb-10 md:mb-14">
+            <a href="https://github.com/IzzulGod" target="_blank" rel="noopener noreferrer" className="w-10 h-10 md:w-12 md:h-12 bg-white dark:bg-gray-800 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 group border border-gray-100 dark:border-gray-700 flex items-center justify-center">
+              <Github className="w-5 h-5 md:w-6 md:h-6 text-gray-700 dark:text-gray-300 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors" />
             </a>
-            <a href="https://id.linkedin.com/in/izzulgod" target="_blank" rel="noopener noreferrer" className="w-12 h-12 bg-white dark:bg-gray-800 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 group border border-gray-100 dark:border-gray-700 flex items-center justify-center">
-              <Linkedin className="w-6 h-6 text-gray-700 dark:text-gray-300 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors" />
+            <a href="https://id.linkedin.com/in/izzulgod" target="_blank" rel="noopener noreferrer" className="w-10 h-10 md:w-12 md:h-12 bg-white dark:bg-gray-800 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 group border border-gray-100 dark:border-gray-700 flex items-center justify-center">
+              <Linkedin className="w-5 h-5 md:w-6 md:h-6 text-gray-700 dark:text-gray-300 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors" />
             </a>
-            <a href="mailto:contact@example.com" className="w-12 h-12 bg-white dark:bg-gray-800 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 group border border-gray-100 dark:border-gray-700 flex items-center justify-center">
-              <Mail className="w-6 h-6 text-gray-700 dark:text-gray-300 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors" />
+            <a href="mailto:contact@example.com" className="w-10 h-10 md:w-12 md:h-12 bg-white dark:bg-gray-800 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 group border border-gray-100 dark:border-gray-700 flex items-center justify-center">
+              <Mail className="w-5 h-5 md:w-6 md:h-6 text-gray-700 dark:text-gray-300 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors" />
             </a>
-            <a href="https://huggingface.co/IzzulGod" target="_blank" rel="noopener noreferrer" className="w-12 h-12 bg-white dark:bg-gray-800 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 group border border-gray-100 dark:border-gray-700 flex items-center justify-center">
-              <span className="text-2xl group-hover:scale-110 transition-transform duration-300">🤗</span>
+            <a href="https://huggingface.co/IzzulGod" target="_blank" rel="noopener noreferrer" className="w-10 h-10 md:w-12 md:h-12 bg-white dark:bg-gray-800 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 group border border-gray-100 dark:border-gray-700 flex items-center justify-center">
+              <span className="text-xl md:text-2xl group-hover:scale-110 transition-transform duration-300">🤗</span>
             </a>
           </div>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <button onClick={scrollToProjects} className="w-full sm:w-auto px-6 sm:px-10 py-3 sm:py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full font-semibold hover:shadow-lg transition-all duration-300 hover:scale-105 flex items-center justify-center space-x-2 sm:space-x-3 group text-base sm:text-lg max-w-48 sm:max-w-none">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center">
+            <button onClick={scrollToProjects} className="w-full sm:w-auto px-6 sm:px-10 py-2.5 sm:py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full font-semibold hover:shadow-lg transition-all duration-300 hover:scale-105 flex items-center justify-center space-x-2 sm:space-x-3 group text-sm sm:text-lg max-w-44 sm:max-w-none">
               <span>Portfolio</span>
               <ArrowDown className="w-4 h-4 sm:w-5 sm:h-5" />
             </button>
-            <button onClick={downloadCV} className="w-full sm:w-auto px-6 sm:px-10 py-3 sm:py-4 border-2 border-blue-600 dark:border-blue-400 text-blue-600 dark:text-blue-400 rounded-full font-semibold hover:bg-blue-600 dark:hover:bg-blue-400 hover:text-white dark:hover:text-gray-900 transition-all duration-300 hover:scale-105 text-base sm:text-lg max-w-48 sm:max-w-none">
+            <button onClick={downloadCV} className="w-full sm:w-auto px-6 sm:px-10 py-2.5 sm:py-4 border-2 border-blue-600 dark:border-blue-400 text-blue-600 dark:text-blue-400 rounded-full font-semibold hover:bg-blue-600 dark:hover:bg-blue-400 hover:text-white dark:hover:text-gray-900 transition-all duration-300 hover:scale-105 text-sm sm:text-lg max-w-44 sm:max-w-none">
               Download CV
             </button>
           </div>
