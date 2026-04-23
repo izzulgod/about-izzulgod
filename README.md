@@ -1,6 +1,6 @@
 # IzzulGod — AI Engineer Portfolio
 
-Personal portfolio website of **Muhammad Izzul Fahmi Mustofa (IzzulGod)** — AI Engineer focused on machine learning, deep learning, NLP, and LLM.
+Personal portfolio website of **Muhammad Izzul Fahmi Mustofa (IzzulGod)** — AI Engineer focused on Machine Learning, Deep Learning, NLP, and LLM.
 
 ## 🚀 Tech Stack
 
