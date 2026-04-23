@@ -10,7 +10,7 @@ const Projects = () => {
       title: "GPT2 Instruct-Tuned",
       description:
         "GPT2-Small Indonesia yang diadaptasi dengan fine-tuning instruction-based menggunakan LoRA yang menginjeksi seluruh layer Transformer, untuk memahami perintah dan berdialog secara interaktif.",
-      image: "/lovable-uploads/GPT2-Indo-Instruct-Tuned.png",
+      image: "/uploads/GPT2-Indo-Instruct-Tuned.png",
       tech: ["Python", "PyTorch", "Transformers", "LoRA", "Pandas", "Matplotlib"],
       github: "https://huggingface.co/IzzulGod/GPT2-Indo-chat-tuned", // gunakan field 'github' supaya tidak merubah logic yang lain
       live: null, // agar tidak render tombol demo
@@ -19,9 +19,9 @@ const Projects = () => {
     // === PROYEK-PROYEK LAIN TETAP ===
     {
       title: "Sorachio AI",
-      description: "Chatbot multimodal cerdas dengan antarmuka modern yang dikembangkan menggunakan platform Lovable.dev. Terintegrasi dengan LLM multimodal melalui OpenRouter API dan dilengkapi sistem pencarian real-time menggunakan Brave Search API.",
-      image: "/lovable-uploads/96a1acad-ecdd-4016-992e-19c0c1780ec6.png",
-      tech: ["TypeScript", "Lovable.dev", "OpenRouter", "Brave API"],
+      description: "Chatbot multimodal cerdas dengan antarmuka modern. Terintegrasi dengan LLM multimodal melalui OpenRouter API dan dilengkapi sistem pencarian real-time menggunakan Brave Search API.",
+      image: "/uploads/sorachio-ai.png",
+      tech: ["TypeScript", "React", "OpenRouter", "Brave API"],
       github: "https://github.com/IzzulGod/Sorachio-Chat",
       live: "https://sorachio.netlify.app"
     },
