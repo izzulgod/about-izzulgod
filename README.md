@@ -1,209 +1,50 @@
-# Website Portofolio
+# IzzulGod — AI Engineer Portfolio
 
-<p align="center">
-  <img src="public/docs-1.png" alt="Dokumentasi Awal" width="600"/>
-</p>
+Personal portfolio website of **Muhammad Izzul Fahmi Mustofa (IzzulGod)** — AI Engineer focused on machine learning, deep learning, NLP, and LLM fine-tuning.
 
-## 🚀 Live Demo
-Visit the live portfolio: [izzulgod.netlify.app](https://izzulgod.netlify.app)
+## 🚀 Tech Stack
 
-A modern, responsive portfolio website showcasing AI/ML projects and professional experience. Built with React, TypeScript, and Tailwind CSS, featuring smooth animations, dark mode support, and an elegant design system.
+- **React 18** + **TypeScript** + **Vite**
+- **Tailwind CSS** + **shadcn/ui**
+- **React Router**
+- **Lucide Icons**
 
-## 🌟 Features
+## 🛠️ Development
 
-- **Modern Design**: Clean, professional interface with gradient backgrounds and smooth animations
-- **Dark Mode**: Seamless light/dark theme switching with system preference detection
-- **Responsive**: Fully responsive design optimized for all devices and screen sizes
-- **Interactive Hero Section**: Animated background elements and floating decorative icons
-- **Project Showcase**: Dynamic project gallery with expandable view and technology tags
-- **Smooth Navigation**: Single-page application with smooth scrolling between sections
-- **Professional Contact**: Direct links to social media and downloadable CV
-- **Performance Optimized**: Built with Vite for fast loading and optimal performance
+```bash
+# Install dependencies
+npm install
 
-## 🛠️ Built With
+# Start dev server
+npm run dev
 
-### Core Technologies
-- **React 18** - Modern React with hooks and functional components
-- **TypeScript** - Type-safe development for better code quality
-- **Vite** - Fast build tool and development server
-- **Tailwind CSS** - Utility-first CSS framework for rapid styling
+# Build for production
+npm run build
 
-### UI Components & Libraries
-- **Shadcn/UI** - High-quality, accessible component library
-- **Lucide React** - Beautiful, customizable icons
-- **Recharts** - Responsive chart library for data visualization
-- **React Router DOM** - Client-side routing
-- **React Query** - Data fetching and state management
+# Preview production build
+npm run preview
+```
 
-### Animation & Theming
-- **Tailwind CSS Animate** - CSS animations and transitions
-- **Next Themes** - Theme management with system preference support
-- **Custom CSS Animations** - Fade-in effects and smooth transitions
+## 🌐 Deployment
+
+This project is configured for **Vercel** (see `vercel.json`). Just import the GitHub repository into Vercel — framework auto-detection will handle the rest.
+
+It can also be deployed to any static host (Netlify, Cloudflare Pages, GitHub Pages, etc.) by serving the contents of `dist/` after `npm run build`.
 
 ## 📁 Project Structure
 
 ```
 src/
-├── components/           # Reusable UI components
-│   ├── ui/              # Shadcn/UI components
-│   ├── Hero.tsx         # Hero section with animations
-│   ├── About.tsx        # About section
-│   ├── Projects.tsx     # Project showcase
-│   ├── Certificates.tsx # Certifications display
-│   ├── Contact.tsx      # Contact information
-│   ├── Navigation.tsx   # Navigation bar
-│   └── ThemeProvider.tsx# Theme context provider
-├── pages/               # Page components
-│   ├── Index.tsx        # Main portfolio page
-│   └── NotFound.tsx     # 404 error page
-├── hooks/               # Custom React hooks
-├── lib/                 # Utility functions
-└── styles/              # Global styles and CSS
+├── components/      # React components (Hero, About, Projects, ...)
+│   └── ui/          # shadcn/ui primitives
+├── hooks/           # Custom hooks
+├── lib/             # Utilities
+├── pages/           # Route pages (Index, NotFound)
+├── App.tsx
+├── main.tsx
+└── index.css        # Tailwind + design tokens
 ```
 
-## 🎨 Key Sections
+## 📝 License
 
-### Hero Section
-- Animated background with floating geometric shapes
-- Gradient text effects and professional introduction
-- Social media links (GitHub, LinkedIn, HuggingFace)
-- Call-to-action buttons with smooth hover effects
-
-### Projects Portfolio
-- Expandable project grid with "Show More/Less" functionality
-- Project cards with hover effects and technology tags
-- Direct links to GitHub repositories and live demos
-- Featured projects including AI/ML models and web applications
-
-### About Section
-- Professional background and expertise
-- Skills and technologies proficiency
-- Career highlights and achievements
-
-### Certificates Section
-- Professional certifications and achievements
-- Educational background
-- Skill validations and endorsements
-
-### Contact Section
-- Professional contact information
-- Social media presence
-- Direct communication channels
-
-## 🚦 Getting Started
-
-### Prerequisites
-- Node.js 18.0 or higher
-- npm or yarn package manager
-
-### Installation
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/IzzulGod/portfolio.git
-   cd portfolio
-   ```
-
-2. **Install dependencies**
-   ```bash
-   npm install
-   # or
-   yarn install
-   ```
-
-3. **Start development server**
-   ```bash
-   npm run dev
-   # or
-   yarn dev
-   ```
-
-4. **Open your browser**
-   Navigate to `http://localhost:8080` to view the portfolio
-
-### Building for Production
-
-```bash
-npm run build
-# or
-yarn build
-```
-
-The built files will be in the `dist/` directory, ready for deployment.
-
-## 🌐 Deployment
-
-This portfolio is deployed on Lovable's platform and can also be deployed to:
-
-- **Netlify**: Connect your GitHub repository for automatic deployments
-- **Vercel**: Import project from GitHub with zero configuration
-- **GitHub Pages**: Use GitHub Actions for automated deployment
-- **Custom Hosting**: Deploy the built files to any static hosting service
-
-### Environment Variables
-
-No environment variables are required for basic functionality. The portfolio works out of the box.
-
-## 📱 Responsive Design
-
-The portfolio is fully responsive with breakpoints optimized for:
-
-- **Mobile**: 320px - 768px
-- **Tablet**: 768px - 1024px
-- **Desktop**: 1024px and above
-- **Large Screens**: 1440px and above
-
-## ♿ Accessibility
-
-- Semantic HTML structure
-- ARIA labels for interactive elements
-- Keyboard navigation support
-- High contrast color schemes
-- Screen reader compatible
-- Focus management and indicators
-
-## 🎯 Performance
-
-- **Lighthouse Score**: 95+ across all metrics
-- **Core Web Vitals**: Optimized for LCP, FID, and CLS
-- **Bundle Size**: Optimized with code splitting and tree shaking
-- **Image Optimization**: Responsive images with proper loading strategies
-
-## 🤝 Contributing
-
-While this is a personal portfolio, suggestions and feedback are welcome:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/improvement`)
-3. Commit your changes (`git commit -am 'Add some improvement'`)
-4. Push to the branch (`git push origin feature/improvement`)
-5. Open a Pull Request
-
-## 🐛 Bug Reports
-
-If you find any issues or have suggestions:
-
-1. Check existing issues to avoid duplicates
-2. Create a detailed issue report
-3. Include screenshots if applicable
-4. Describe expected vs actual behavior
-
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
-## 🙏 Acknowledgments
-
-- **Lovable.dev** - Development platform
-- **Shadcn/UI** - Component library and design system
-- **Tailwind CSS** - Styling framework
-- **Lucide Icons** - Beautiful icon library
-- **Unsplash** - High-quality stock images
-
-## 📊 Project Stats
-
-- **Lines of Code**: ~2,500+
-- **Components**: 15+ reusable components
-- **Bundle Size**: <500KB gzipped
-- **Load Time**: <2 seconds on average connection
-- **Mobile Performance**: 95+ Lighthouse score
+© Muhammad Izzul Fahmi Mustofa — All rights reserved.

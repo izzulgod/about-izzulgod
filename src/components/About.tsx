@@ -54,7 +54,7 @@ const About = () => {
                 
                 {/* Image container */}
                 <div className="absolute inset-2 bg-white dark:bg-gray-800 rounded-3xl p-2 shadow-2xl transition-colors duration-300">
-                  <img src="/lovable-uploads/d54a47b3-36d0-45e0-a835-b2bb4b5b3ee5.png" alt="Muhammad Izzul Fahmi Mustofa" className="w-full h-full object-cover rounded-2xl" />
+                  <img src="/uploads/profile.png" alt="Muhammad Izzul Fahmi Mustofa" className="w-full h-full object-cover rounded-2xl" />
                 </div>
                 
                 {/* Floating decorative elements */}
