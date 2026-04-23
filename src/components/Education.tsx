@@ -13,11 +13,11 @@ const Education = () => {
     },
     {
       degree: "Sistem Informasi",
-      institution: "Universitas Terbuka",
+      institution: "Universitas Amikom Yogyakarta",
       period: "2025 - Sekarang",
-      location: "Jawa Tengah, Indonesia", 
+      location: "Yogyakarta, Indonesia", 
       description: "Mempelajari pengembangan sistem informasi, database, dan teknologi informasi",
-      logo: "/edu/university.jpg"
+      logo: "/edu/amikom-logo.png"
     }
   ];
 
